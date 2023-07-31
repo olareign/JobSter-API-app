@@ -149,7 +149,7 @@ monthlyApplications = monthlyApplications.map((item) => {
   } = item;
   const date = moment().month(month - 1).year(year).format('MMM Y')
   return {date,count}
-})
+}).reverse()
 
 res
   .status(StatusCodes.OK)
